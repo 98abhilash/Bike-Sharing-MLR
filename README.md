@@ -1,5 +1,14 @@
-# 1. Assignment - Multiple Linear Regression (Bike Sharing Data)
-## 1.1. Problem Statement
+# Assignment - Multiple Linear Regression (Bike Sharing Data)
+
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Conclusions](#conclusions)
+<!--  -->
+<!-- You can include any other section that is pertinent to your problem -->
+
+## General Information
+### Problem Statement
 
 A bike-sharing system is a service in which bikes are made available for shared use to individuals on a short term basis for a price or free. Many bike share systems allow people to borrow a bike from a "dock" which is usually computer-controlled wherein the user enters the payment information, and the system unlocks it. This bike can then be returned to another dock belonging to the same system.<br>
 A US bike-sharing provider BoomBikes has recently suffered considerable dips in their revenues due to the ongoing Corona pandemic. The company is finding it very difficult to sustain in the current market scenario. So, it has decided to come up with a mindful business plan to be able to accelerate its revenue as soon as the ongoing lockdown comes to an end, and the economy restores to a healthy state.<br> 
@@ -12,59 +21,13 @@ They have contracted a consulting company to understand the factors on which the
 Based on various meteorological surveys and people's styles, the service provider firm has gathered a large dataset on daily bike demands across the American market based on some factors.
 
 
-## 1.2. Business Goal
+### Business Goal
 
 You are required to model the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features. They can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations. Further, the model will be a good way for management to understand the demand dynamics of a new market. 
 
+### Data Dictionary 
 
-## 1.3. Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
-<!--  -->
-<!-- You can include any other section that is pertinent to your problem -->
-
-## 1.4. General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
-## 1.5. Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
-
-## 1.6. Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
-
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## 1.7. Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
-
-## 1.8. Contact
-Created by [@githubusername] - feel free to contact me!
-
-## 1.9. Data Dictionary 
-
-
-
-#### 1.9.0.1. Dataset characteristics
-
+#### Dataset characteristics
 day.csv have the following fields:
 	
 	- instant: record index
@@ -89,7 +52,7 @@ day.csv have the following fields:
 	- cnt: count of total rental bikes including both casual and registered
 	
 
-#### 1.9.0.2. License
+#### License
 
 Use of this dataset in publications must be cited to the following publication:
 
@@ -109,10 +72,67 @@ Use of this dataset in publications must be cited to the following publication:
 }
 
 
-#### 1.9.0.3. Contact
+### Contact
 
 	
 For further information about this dataset please contact Hadi Fanaee-T (hadi.fanaee@fe.up.pt)
+
+
+<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+
+## Conclusions
+
+<div class="alert alert-block alert-success">
+Final Equation of the Linear Regression Model is: </br>
+\cnt = 0.385255*const + 0.224247*yr + 0.046505*workingday + (-0.251472*hum) + (-0.136941*windspeed) + (-0.139546*Spring) + 0.086837*winter + (-0.066279*Dec) + (-0.079521*Nov) + 0.065155*Sep + (-0.196867*Snow) + 0.058043*Sat
+</div>
+
+<div class="alert alert-block alert-info">
+<b>After the equation we can conclude that</b> </br>
+
+<b> yr </b>: Change in one unit of yr changes 0.224247 units of cnt assuming that all the other variable states constant </br>
+
+<b> workingday </b>: Change in one unit of workingday changes 0.046505 units of cnt assuming that all the other variable states constant </br>
+
+<b> atemp </b>: Change in one unit of atemp changes 0.425314 units of cnt assuming that all the other variable states constant </br>
+
+<b> hum </b>: Change in one unit of hum changes -0.251472 units of cnt assuming that all the other variable states constant </br>
+
+<b> windspeed </b>: Change in one unit of windspeed changes -0.136941 units of cnt assuming that all the other variable states constant </br>
+
+<b> Spring </b>: Change in one unit of Spring changes -0.139546 units of cnt assuming that all the other variable states constant </br>
+
+<b> Winter </b>: Change in one unit of Winter changes 00.86837 units of cnt assuming that all the other variable states constant </br>
+
+<b> Dec </b>: Change in one unit of Dec changes -0.066279 units of cnt assuming that all the other variable states constant </br>
+
+<b> Nov </b>: Change in one unit of Nov changes -0.079521 units of cnt assuming that all the other variable states constant </br>
+
+<b> Sep </b>: Change in one unit of Sep changes 0.065155 units of cnt assuming that all the other variable states constant </br>
+
+<b> Snow </b>: Change in one unit of Snow changes -0.196867 units of cnt assuming that all the other variable states constant </br>
+
+<b> Sat </b>: Change in one unit of Sat changes 0.058043 units of cnt assuming that all the other variable states constant </br>
+
+</div>
+
+<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+
+
+## Technologies Used
+    Pandas - version 1.3.3
+    Numpy - version 1.20.3
+    Matplotlib - version 3.4.3
+    Seaborn - version 0.11.2
+    Scikit-learn - version 1.0.1
+    Statsmodel - version 0.13.1
+
+<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
+
+## Contact
+Created by [@98abhilash] - feel free to contact me!
+
+
 
 
 <!-- Optional -->
